@@ -1,3 +1,20 @@
+<?php
+  $file = 'view_template.txt';
+
+  // Create the file with 0 if it doesn't exist
+  if (!file_exists($file)) {
+    file_put_contents($file, '0');
+  }
+
+  // Read current count
+  $count = (int) file_get_contents($file);
+
+  // Increment by 1
+  $count++;
+
+  // Save the new count
+  file_put_contents($file, $count);
+?>
 <html>
 
 <head>
@@ -48,7 +65,7 @@ if (isOldDesktop || !canVideo) {
 </script>
 
 <p align="center">&nbsp;&nbsp;&nbsp; <font face="Tahoma" size="2">Can't view the 
-video? Just click here!</font></p>
+video?<a href="http://dl.mcopulos.com/vid/mp4/awts_gege.mp4"> Just click here!</a></font></p>
 <p align="left"><font face="Tahoma" size="2">Description: Description goes here</font></p>
 <p align="left"><font face="Tahoma" size="2">Uploaded: Maybe</font></p>
 <p align="left"><font face="Tahoma" size="2"><a href="videos.htm">Click here to 
