@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+<title>Untitled 1</title>
+<style type="text/css">
+.style1 {
+	font-family: Tahoma;
+}
+</style>
+</head>
+
+<body>
+<table cellspacing="5" cellpadding="0" align="center" style="height: 218px; width: 991px">
+		<tr>
+			<td style="height: 19px; width: 524px;">
+			<h1 class="style1">Casio Casiotone MT-240 Review</h1>
+			<hr /></td>
+			<td style="height: 19px" class="style1">Uploaded: 4/16/2026<br />
+			Can't view the video? <a href="http://dl.mcopulos.com/vid/mp4/awts_gege.mp4">Just click here!</a></td>
+		</tr>
+		<tr>
+			<td style="height: 282px; width: 524px"><div id="player"></div>
+
+<script>
+var ua = navigator.userAgent;
+
+
+// Detect old desktop browsers (rough but effective)
+var isOldIE = /MSIE [1-8]\./.test(ua);
+var isOldFirefox = /Firefox\/[1-3]\./.test(ua);
+var isOldChrome = /Chrome\/[1-9]\./.test(ua);
+var isOldSafari = /Safari\/[1-4]\./.test(ua) && ua.indexOf('Chrome') === -1;
+
+var isOldDesktop = isOldIE || isOldFirefox || isOldChrome || isOldSafari;
+
+// HTML5 video support (fallback check)
+var canVideo = !!document.createElement('video').canPlayType;
+
+var playerDiv = document.getElementById("player");
+
+if (isOldDesktop || !canVideo) {
+    // OLD DESKTOP &#8594; Flash
+    playerDiv.innerHTML =
+       '<p align="center">' + 
+   		'<OBJECT id=player1 height=480 width=640 classid=clsid:D27CDB6E-AE6D-11cf-96B8-444553540000 name=allowfullscreen value="true" NAME="allowfullscreen" VALUE="true">' + 
+		'<PARAM NAME="allowscriptaccess" VALUE="always">' + 
+		'<PARAM NAME="flashvars" VALUE="file=http://dl.mcopulos.com/vid/56k/casio_review.flv&amp;autostart=true">' + 
+		'<param name="movie" value="flash/player.swf">' + 
+		'<param name="quality" value="High">' + 
+		'<embed id="player1" name="player1" src="flash/player.swf" width="640" height="480" allowscriptaccess="always" allowfullscreen="true" flashvars="file=http://dl.mcopulos.com/vid/56k/awts_gege.flv&autostart=true" quality="High" /></OBJECT>' + 
+		'</p>'; 
+} else {
+    // MODERN DESKTOP &#8594; HTML5
+    playerDiv.innerHTML =
+        '<center><video src="http://dl.mcopulos.com/vid/mp4/casio_review.mp4" controls width="854" height="480"></video></center>';
+}
+</script>
+</td>
+			<td style="height: 282px" class="style1">Description: Can you 
+			believe it only cost $90? I still own it, btw. It's just much more 
+			beat up than when you last saw it.</td>
+		</tr>
+
+	</table>
+	<p class="style1"><a href="vid_tech.htm">Click here to go back.</a></p>
+
+</body>
+
+</html>
