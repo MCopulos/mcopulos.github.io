@@ -14,12 +14,24 @@
 
 <body>
 
-<h1 align="center"><b><font face="Tahoma">Welcome to MCopulos<font color="#800000">.com</font>!</font></b></h1>
+<h1 align="center">
+<img alt="" src="images/welcome.gif" width="640" height="320"></h1>
+<div id="splash"></div>
+<script>
+	const items = ['IE Compatible!', 'Yes It Is!', 'Perchance!', 'Gregnant?', 'Windows XP Compatible!', 'Full Of Flash!', 'Totally Radical, Dude!', 'Repetition Legitimizes!', 'Repetition Legitimizes!', 'C#sus9!', 'Flash 8 + 3 = 11!', 'Banned From School!', 'PDA Incompatible!', 'Has HTML5 Ocassionally!', 'Preggers! (or something like that)', 'Eraouruh Ecks-Dee!', 'Preganananananant!', 'Pregananananananananananananananananananananananananananananananananananananananananananananananananananananananananananananananananananananananant!' /* Sorry about the preganacy stuff, we watched that one video in class today and I can't get it off of my mind. You know the one (4/16/2026)*/, 'You Know The Name, Look Up The Number!'];
+	const randomIndex = Math.floor(Math.random() * items.length);
+	const randomString = items[randomIndex];
+	var splashDiv = document.getElementById("splash");
+	splashDiv.innerHTML =
+		'<marquee><font face="Tahoma" size="4">' + 
+		randomString +
+		'</font></marquee>';
+</script>
 <p align="center"><font face="Tahoma" size="2">To begin, click a link on the 
 sidebar. 
 Otherwise, read below:</font></p>
 <hr>
-<p align="left"><font face="Tahoma" size="4">What's New?</font></p>
+<p align="left"><font face="Tahoma" size="4"><strong>What's New?</strong></font></p>
 <p align="left" class="style4">4/14/2026: More updates, added browser detection 
 to both sites.</p>
 <p align="left" class="style4"><font face="Tahoma">4/5/2026: Progress on videos page, mobile website basically done.</font></p>
